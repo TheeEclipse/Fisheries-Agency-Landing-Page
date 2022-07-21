@@ -1,10 +1,16 @@
+<?php
+
+#form handling here
+
+
+?>
 <!DOCTYPE html>
 
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Astral Ecorp</title>
+        <title>Your Own Title</title>
         <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
@@ -39,13 +45,13 @@
         </tr>
         <tr>
             <td>
-                <select name="cars" id="cars" style="width: 70px;">
-                    <option value="volvo">Location</option>
-                    <option value="saab">Nepal</option>
-                    <option value="opel">Mumbai</option>
-                    <option value="audi">Cuba</option>
-                    <option value="audi">Ohaio</option>
-                    <option value="audi">Nairobi</option>
+                <select name="cars" id="places" style="width: 70px;">
+                    <option value="loc">Location</option>
+                    <option value="nep">Nepal</option>
+                    <option value="mum">Mumbai</option>
+                    <option value="cub">Cuba</option>
+                    <option value="oh">Ohaio</option>
+                    <option value="nai">Nairobi</option>
                   </select>
             </td>
             <td>
@@ -63,4 +69,9 @@
     </div>
 </div>
 </form>
+    <?php
+     #handle errors here if anything is to be set as required and isn't satisfied by user
+    
+    ?>
+    </body>
 </html>
