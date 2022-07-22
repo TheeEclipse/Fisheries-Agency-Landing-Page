@@ -5,6 +5,14 @@ html{
     margin: 0%;
     padding: 0%;
 }
+body{
+    background-image: url("https://images.unsplash.com/photo-1596414086775-3e321ab08f36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNlYSUyMGxpZmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -36,40 +44,31 @@ a :hover{
     margin-top: 0px;
     margin-left: 0px
 }
-.lit{
-    background-image: url("https://images.unsplash.com/photo-1596414086775-3e321ab08f36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNlYSUyMGxpZmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
+
 .rd{
     margin-top: 200px;
     color: whitesmoke;
     text-align: center;
 }
-.bx{
-    width: 500px;
-    background-color: white;
-    opacity: 80%;
+
+#tb{
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    border-radius: 10px;
-}
-table{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 20px;
-}
- th{
-    margin-right: 20px;
-    color: rgb(0, 0, 0);
-    margin-left: 100px;
-    width: 110px;
-    text-align: center;
+    background-color:whitesmoke;
+    opacity:80%;
     
+}
+table {
+    border-radius:5px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: auto;
+    border: none;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
 }
 #lk{
     width: 70px;
@@ -89,9 +88,45 @@ td button{
     color: whitesmoke;
     border: none;
     background-color: orangered;
-    text-align: center;
-    margin: 20px;
-    margin-left: 76%;
+    
+}
+@media screen and (min-width:1000px){
+    .vertical-menu {
+        display:none;
+    }
+    
 }
 
+@media screen and (max-width:1000px){
+    .float-lg-end{
+        display:none;
+    }
+    #container {
+        margin-top:8px;
+        margin-right:8px;
+        cursor: pointer;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color:orangered;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+      
+}
+    
 
